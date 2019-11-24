@@ -12,7 +12,7 @@ export class UserService {
   constructor() {
     //Here instead of putting manually the data we can access to a Restful API via HTTP's requests
     let Usuario1: User = {
-      nick: 'Eduardo',
+      nick: 'Eduardo Martín ',
       subnick: 'Hola, soy Eduardo',
       age: 21,
       email: 'email@mail.com',
@@ -21,7 +21,7 @@ export class UserService {
     };
 
     let Usuario2: User = {
-      nick: 'Julian',
+      nick: 'Julian Esteban',
       subnick: 'Hola, soy Julian',
       age: 22,
       email: 'email@mail.com',
@@ -30,7 +30,7 @@ export class UserService {
     };
 
     let Usuario3: User = {
-      nick: 'Sebastián',
+      nick: 'Juan Sebastián',
       subnick: 'Hola, soy Sebastián',
       age: 23,
       email: 'email@mail.com',
@@ -39,7 +39,7 @@ export class UserService {
     };
 
     let Usuario4: User = {
-      nick: 'Matías',
+      nick: 'Matías Eduardo',
       subnick: 'Hola, soy Matías',
       age: 24,
       email: 'email@mail.com',
@@ -48,7 +48,7 @@ export class UserService {
     };
 
     let Usuario5: User = {
-      nick: 'Cristóbal',
+      nick: 'Cristóbal Julio',
       subnick: 'Hola, soy Cristóbal',
       age: 25,
       email: 'email@mail.com',
@@ -59,13 +59,13 @@ export class UserService {
     this.friends = [Usuario1, Usuario2, Usuario3, Usuario4, Usuario5];
    }
 
-   getFriends() : User []{
-     return this.friends;
-   }
+  getFriends() : User[] {
+      return this.friends;
+  }
 
-   getAFriend(uid : Number) : User {
-      return this.friends.find( (record) => {
-        return record.uid == uid;
-      })
-   }
+  getAFriend(uid : Number) : User {
+    return this.friends.find(
+      (record) => { return record.uid == uid; }
+    )
+  }
 }

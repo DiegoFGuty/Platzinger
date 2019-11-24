@@ -18,6 +18,7 @@ export class ConversationComponent implements OnInit {
     console.log(this.friendId);
 
     this.friend = userService.getAFriend(this.friendId);
+    console.log(this.friend.nick);
    }
 
   ngOnInit() {

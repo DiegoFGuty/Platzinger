@@ -9,7 +9,8 @@ import { UserService } from '../Services/user.service';
 })
 export class HomeComponent implements OnInit {
 
-  private friends: User[];
+  friends: User[];
+  query:string = "";
 
   constructor(private userService: UserService) {
     this.friends = userService.getFriends();
@@ -17,5 +18,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+
 
 }
